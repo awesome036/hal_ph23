@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<form action="./createPDF.php" method="post">
+		<p>〒</p>
+		<input type="text" name="zipcode" id="zipcode" required>
+		<p>住所</p>
+		<input type="text" name="address" id="address" required>
+		<p>氏名</p>
+		<input type="text" name="name" id="name" required>
+		<p>購入明細</p>
+		<table>
+			<tr>
+				<th>商品名</th>
+				<th>単価</th>
+				<th>数量</th>
+			</tr>
+			<tr>
+				<td><input type="text" name="pname[0]" id="productsName"></td>
+				<td><input type="text" name="price[0]" id="productsPrice"></td>
+				<td><input type="text" name="amount[0]" id="productsAmount"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="pname[1]" id="productsName"></td>
+				<td><input type="text" name="price[1]" id="productsPrice"></td>
+				<td><input type="text" name="amount[1]" id="productsAmount"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="pname[2]" id="productsName"></td>
+				<td><input type="text" name="price[2]" id="productsPrice"></td>
+				<td><input type="text" name="amount[2]" id="productsAmount"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="pname[3]" id="productsName"></td>
+				<td><input type="text" name="price[3]" id="productsPrice"></td>
+				<td><input type="text" name="amount[3]" id="productsAmount"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="pname[4]" id="productsName"></td>
+				<td><input type="text" name="price[4]" id="productsPrice"></td>
+				<td><input type="text" name="amount[4]" id="productsAmount"></td>
+			</tr>
+		</table>
+		<input type="submit" value="PDF">
+	</form>
+</body>
+</html>

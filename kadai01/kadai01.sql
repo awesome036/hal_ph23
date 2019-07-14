@@ -1,0 +1,11 @@
+SET sql_mode='STRICT_ALL_TABLES';
+
+DROP DATABASE IF EXISTS ph23_kadai01;
+CREATE DATABASE ph23_kadai01;
+USE ph23_kadai01;
+
+DROP TABLE IF EXISTS kadai01_users;
+CREATE TABLE kadai01_users(
+	id VARCHAR(20) PRIMARY KEY,
+	password VARCHAR(255)
+);
